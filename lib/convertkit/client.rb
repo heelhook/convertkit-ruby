@@ -1,4 +1,5 @@
 require "convertkit/client/account"
+require "convertkit/client/broadcast"
 require "convertkit/client/custom_fields"
 require "convertkit/client/forms"
 require "convertkit/client/sequences"
@@ -10,6 +11,7 @@ require "convertkit/connection"
 module Convertkit
   class Client
     include Account
+    include Broadcast
     include CustomFields
     include Forms
     include Sequences
